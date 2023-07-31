@@ -10,16 +10,16 @@ Additionally, here is a list of questions I have done, and plan on doing in the 
 - [x] Replace Elements With Greatest Element On Right Side
 - [x] Is Subsequence
 - [x] Length of Last Word
-- [] Two Sum
-- [] Longest Common Prefix
-- [] Group Anagrams
-- [] Pascals Triangle
-- [] Remove Element
-- [] Unique Email Addresses
-- [] Isomorphic Strings
-- [] Can Place Flowers
-- [] Majority Element
-- [] Next Greater Element I
-- [] Find Pivot Index
-- [] Range Sum Query - Immutable
-- [] Find All Numbers Disappeared in An Array
+- [ ] Two Sum
+- [ ] Longest Common Prefix
+- [ ] Group Anagrams
+- [ ] Pascals Triangle
+- [ ] Remove Element
+- [ ] Unique Email Addresses
+- [ ] Isomorphic Strings
+- [ ] Can Place Flowers
+- [ ] Majority Element
+- [ ] Next Greater Element I
+- [ ] Find Pivot Index
+- [ ] Range Sum Query - Immutable
+- [ ] Find All Numbers Disappeared in An Array
