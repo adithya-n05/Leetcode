@@ -1,19 +1,24 @@
 #
-# @lc app=leetcode id=1 lang=python3
+# @lc app=leetcode id=1 lang=python
 #
 # [1] Two Sum
 #
 
 # @lc code=start
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        prevMap = {}
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
 
-        for i in range(len(nums)):
-            Diff = target - nums[i]
-            if Diff in prevMap:
-                return prevMap[Diff], i
-            prevMap[nums[i]] = i
+        for index in range(len(nums)):
+            if target - nums[index] in nums[index+1:]:
+                return [nums[index+1:].index(target-nums[index]) + index+1, index]
+        
+        return []
 
+        
 # @lc code=end
 

@@ -12,29 +12,25 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        dictOfLetters = {}
-        dictOfLettersT = {}
 
-        for i in range(len(s)):
-            if s[i] in dictOfLetters:
-                dictOfLetters[s[i]] = dictOfLetters[s[i]] + 1
+        count1 = {}
+        count2 = {}
+
+        for c in s:
+            if c in count1:
+                count1[c] += 1
             else:
-                dictOfLetters[s[i]] = 1
+                count1[c] = 1
         
-        for i in range(len(t)):
-            if t[i] not in dictOfLetters:
-                return False
-        
-        for i in range(len(t)):
-            if t[i] in dictOfLettersT:
-                dictOfLettersT[t[i]] = dictOfLettersT[t[i]] + 1
+
+        for c in t:
+            if c in count2:
+                count2[c] += 1
             else:
-                dictOfLettersT[t[i]] = 1
+                count2[c] = 1
 
-        if dictOfLettersT != dictOfLetters:
-            return False
+        return count1 == count2
         
-        return True
-
+        
 # @lc code=end
 

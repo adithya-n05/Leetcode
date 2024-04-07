@@ -12,13 +12,14 @@ class Solution(object):
         :rtype: bool
         """
 
-        setOfNum = set()
-        
-        for i in nums:
-            if i in setOfNum:
-                print("Found it")
+        hashset = set()
+
+        for num in nums:
+            if num in hashset:
                 return True
-            setOfNum.add(i)
+            else:
+                hashset.add(num)
+        
         return False
         
 # @lc code=end

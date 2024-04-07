@@ -1,23 +1,34 @@
 #
-# @lc app=leetcode id=58 lang=python3
+# @lc app=leetcode id=58 lang=python
 #
 # [58] Length of Last Word
 #
 
 # @lc code=start
-class Solution:
-    def lengthOfLastWord(self, s: str) -> int:
-        count = 0
-        i = len(s) - 1
-        while i >= 0:
-            if count > 0 and s[i]  == " ":
-                return count
-            elif s[i] == " " and count == 0:
-                i-= 1
-            else:
-                count += 1
-                i -= 1
-        return count
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+
+        storeval = 0
+        newlen = 0
+
+        for index in range(len(s)):
+            if s[index] != " ":
+                newlen +=1
+            elif s[index] == " " and newlen != 0:
+                storeval = newlen
+                newlen = 0
+
+        if newlen!= 0:
+            storeval = newlen
+        
+        return storeval
+
+
+
+        
 # @lc code=end
-            
 
